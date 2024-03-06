@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto4</title>
+</head>
+<body>
+
+    <script>
+ let a =100;
+    let b = 200;
+
+    function multiplicar(a,b){
+        return a*b;
+    }
+
+    let resultado= multiplicar(a,b);
+    console.log(resultado);
+
+
+    function calcularAreaCirculo(){
+        let area = Math.PI * Math.pow(radio,2);
+        return area;
+    }
+
+    console.log(calcularAreaCirculo(5));
+
+    function toCelsius(fahrenheit){
+        return (5/9) * (fahrenheit-32);
+    }
+
+    console.log(toCelsius(77));
+    console.log("La temperatura es de " + toCelsius(77) + " grados Celsius");
+
+    const carro ={
+        tipo: "Tesla",
+        modelo: "Model 3",
+        color: "rojo",
+    }
+
+        let variable = 10;
+        let variable2 = "Hola mundo";
+        let variable3 = true;
+        let variable4 = null;
+        let variable5 = [1,2,3,4,5];
+        console.log("Tipo: ", typeof variable);
+        console.log("Tipo: ", typeof variable2);
+        console.log("Tipo: ", typeof variable3);
+        console.log("Tipo: ", typeof variable4);
+        console.log("Tipo: ", typeof variable5);
+        console.log(carro.modelo);
+        console.log(carro["modelo"]);
+
+        let saludo;
+
+        console.log(saludo);
+
+        let hora = new Date().getHours();
+        console.log(hora);
+
+        if(hora < 12){
+            console.log("Buenos días");
+        }else if(hora < 20){
+            console.log("Buenas tardes");
+        }else{
+            console.log("Buenas noches");
+        }
+
+        let dia = new Date().getDay();
+        console.log(dia);
+
+        switch(dia){
+            case 0:
+                console.log("Domingo");
+                break;
+            case 1:
+                console.log("Lunes");
+                break;
+            case 2:
+                console.log("Martes");
+                break;
+            case 3:
+                console.log("Miércoles");
+                break;
+            case 4:
+                console.log("Jueves");
+                break;
+            case 5:
+                console.log("Viernes");
+                break;
+            case 6:
+                console.log("Sábado");
+                break;
+        }
+
+        let i=500;
+        let nombre = "Juan";
+        for(let i=10; i<20; i++){
+            console.log("valor de i: ", i);
+            nombre = "Pedro";
+        }
+
+        console.log("Valor de i: ", i);
+        console.log("Valor de nombre: ", nombre);
+
+        const PI = Math.PI;
+        console.log(PI);
+ 
+        const persona = { nombre : "Juan", edad : 30, sexo : "M", casado : false};
+ 
+        for(let propiedad in persona) {
+            console.log(propiedad, persona[propiedad]);
+        }
+ 
+        let marcas = ["Toyota", "Nissan", "Honda", "Mazda"];
+        for(let marca of marcas) {
+            console.log(marca);
+        }
+ 
+        j = 1;  
+        while(j < 30) {
+            console.log(j);
+            j++;
+        }
+    </script>
+   
+
+
+   
+</body>
+</html>
